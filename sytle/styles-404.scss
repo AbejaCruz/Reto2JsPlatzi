@@ -1,0 +1,87 @@
+$Color_Verder: #21C08B;
+$Color_Morado: #AB88FF;
+$tipografia: "Muli", sans-serif;
+body {
+  margin: 0px;
+  font-family: $tipografia;
+}
+
+.header {
+  height: 50px;
+  background-color: $Color_Verder;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header img {
+  height: 50px;
+}
+
+.container {
+  background: linear-gradient($Color_Verder, $Color_Morado);
+  min-height: calc(100vh - 170px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+//Animacion de pulso
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+  
+}
+.pulse {
+  animation-name: pulse;
+  animation-duration: 2s;
+}
+.container h2 {
+  margin: 0px;
+  color: white;
+  font-size: 70px;
+  animation-name: pulse;
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+.container p {
+  color: white;
+  font-size: 25px;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: $Color_Morado;
+}
+
+.footer__container {
+  padding: 30px;
+  width: 100%;
+}
+
+.footer__container a {
+  color: white;
+  text-decoration: none;
+  font-family: $tipografia;
+  margin-right: 30px;
+  font-size: 14px;
+  min-height: 500px;
+}
+
+.footer__container a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=styles-error.css.map */
